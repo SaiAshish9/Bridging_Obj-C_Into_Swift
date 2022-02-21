@@ -13,6 +13,7 @@
 		978DFB1A27C37B2800947B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978DFB1827C37B2800947B56 /* Main.storyboard */; };
 		978DFB1C27C37B2900947B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 978DFB1B27C37B2900947B56 /* Assets.xcassets */; };
 		978DFB1F27C37B2900947B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978DFB1D27C37B2900947B56 /* LaunchScreen.storyboard */; };
+		978DFB2B27C3954F00947B56 /* CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 978DFB2A27C3954F00947B56 /* CustomObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		978DFB1B27C37B2900947B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		978DFB1E27C37B2900947B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		978DFB2027C37B2900947B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		978DFB2827C3954F00947B56 /* BridgingObjC_Into_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BridgingObjC_Into_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		978DFB2927C3954F00947B56 /* CustomObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomObject.h; sourceTree = "<group>"; };
+		978DFB2A27C3954F00947B56 /* CustomObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,9 @@
 				978DFB1B27C37B2900947B56 /* Assets.xcassets */,
 				978DFB1D27C37B2900947B56 /* LaunchScreen.storyboard */,
 				978DFB2027C37B2900947B56 /* Info.plist */,
+				978DFB2927C3954F00947B56 /* CustomObject.h */,
+				978DFB2A27C3954F00947B56 /* CustomObject.m */,
+				978DFB2827C3954F00947B56 /* BridgingObjC_Into_Swift-Bridging-Header.h */,
 			);
 			path = BridgingObjC_Into_Swift;
 			sourceTree = "<group>";
@@ -99,6 +106,7 @@
 				TargetAttributes = {
 					978DFB0E27C37B2800947B56 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -141,6 +149,7 @@
 				978DFB1727C37B2800947B56 /* ViewController.swift in Sources */,
 				978DFB1327C37B2800947B56 /* AppDelegate.swift in Sources */,
 				978DFB1527C37B2800947B56 /* SceneDelegate.swift in Sources */,
+				978DFB2B27C3954F00947B56 /* CustomObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -304,6 +314,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "co.sai.BridgingObjC-Into-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BridgingObjC_Into_Swift/BridgingObjC_Into_Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,6 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -331,6 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "co.sai.BridgingObjC-Into-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BridgingObjC_Into_Swift/BridgingObjC_Into_Swift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
